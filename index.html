@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous"/>
+    <title>Badran Project</title>
+</head>
+<body>
+    <section>
+        <div class="player">
+         <div class="container">
+   <!-- ============== Title ==============  -->
+
+           <div class="title">
+                <h1>Badran Audio</h1>
+                <p>WDDM - 114</p>
+            </div>
+    <!-- ============== Recording Buttons ==============  -->
+        <div class="recording"> 
+            <button id="start" disabled>Start recording</button>
+            <button id="stop" disabled>Stop recording</button>
+            <p>Click the "Start recording" to begin recording. Your browser will prompt for access to your default microphone. Listeners setup within the <code>loadMicrophone</code> function will toggle the <code>disabled</code> attributes for the buttons. When you press "Stop recording", the audio clip will play back immediately.</p>
+        </div>
+    
+    
+    
+    <!-- ============== Audio Buttons ==============  -->
+
+            <div class="audio-btns">
+                <div class="play-btns">
+                  <a href="#" onclick="prevAudio()"><i class="fa fa-backward"></i></a>
+                  <a href="#" class="play-pause" onclick="togglePlayPause()"
+                    ><i class="fa fa-play"></i
+                  ></a>
+                  <a href="#" onclick="nextAudio()"><i class="fa fa-forward"></i></a>
+                </div>
+                <div class="play-btns">
+                    <a href="#" onclick="prevAudio()"><i class="fa fa-backward"></i></a>
+                    <a href="#" class="play-pause" onclick="togglePlayPause()"
+                      ><i class="fa fa-play"></i
+                    ></a>
+                    <a href="#" onclick="nextAudio()"><i class="fa fa-forward"></i></a>
+                  </div>
+                <div class="volume-btns">
+                  <span>
+                    <a href="#" class="volume-up"><i class="fa fa-volume-up"></i></a>
+                  </span>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>
