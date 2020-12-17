@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background: linear-gradient(120deg, #1db8a3, #6b258b, #2157a8);
+    height: 100vh;
+  }
+  .player {
+    background: rgb(27, 27, 27);
+    width: 450px;
+    height: 730px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #01b7ff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 30px rgb(25, 100, 129), -1px -1px 30px #111;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    }
+
+
+    .audio-btns {
+        margin: 40px auto;
+        height: 350px;
+        width: 100%;
+        border-radius: 48%;
+        text-align: center;
+      }
+      
+      .audio-btns a:hover {
+        color: #aaa;
+      }
+      
+      .play-btns {
+        padding: 45px 0 30px 0;
+      }
+      .play-btns a {
+        color: #fff;
+        margin: 0 30px;
+        font-size: 1.5em;
+        transition: all 0.5;
+      }
+      
+      .play-btns .play-pause {
+        background: #01b7ff;
+        padding: 30px 30px 30px 33px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 50px #111;
+      }
+      
+      .volume-btns {
+        margin: 30px 0;
+      }
+      
+      .volume-btns a {
+        color: #fff;
+        margin: 0 40px;
+        font-size: 1.3em;
+      }
+      
+      .volume-btns button {
+        width: 30px;
+        height: 30px;
+        border: none;
+        font-size: 1.3em;
+        font-weight: bold;
+        color: #01b7ff;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 1px 1px 25px #111;
+        transition: all 0.3s;
+      }
+      
+      .volume-btns button:hover {
+        background: #01b7ff;
+        color: #fff;
+      }
