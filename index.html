@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css" />
-   
+    
     <title>Badran Project</title>
 </head>
 <body>
+
+ 
     <section>
         <div class="player">
          <div class="container">
@@ -20,16 +22,17 @@
             </div>
     <!-- ============== Recording Buttons ==============  -->
         <div class="recording"> 
-            <div class="equlizer">
-                <p>Click the "Start recording" to begin recording. Your browser will prompt for access t</p>
-            </div>
-
-            <i class="fas fa-microphone-alt">Start recording</i>
-            <i class="fas fa-microphone-alt-slash">Stop recording</i>
-       </div>
+            
+                <p>Click the "Start recording" to begin recording. Your browser will prompt for access</p>
+          
+            <a id="start" disabled><i class="fas fa-microphone-alt" id="start"></i>Start recording</a>
+            <a id="stop" disabled><i class="fas fa-microphone-alt-slash" id="stop"></i>Stop recording</a>  
+           
+            <div id="content">
+                  <canvas id="canvas"></canvas>
+                </div>
     
-    
-    
+       
     <!-- ============== Audio Buttons ==============  -->
 
             <div class="audio-btns">
@@ -57,5 +60,7 @@
           </div>
         </div>
     </section>
+    <script src="js/main.js"></script>
+  
 </body>
 </html>
