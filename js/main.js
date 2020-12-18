@@ -124,3 +124,81 @@ let recordingNow = function(isRecording) {
 
 // When the window is loaded and ready to go, get the Microphone ready
 window.addEventListener(`load`, loadMicrophone)
+
+
+
+
+let fillbar = document.querySelector(".fill");
+let audios = ["audio/Audio_One.mp3", "audio/Audio_Two.mp3", "audio/Audio_Three.mp3"];
+let covers = ["imgs/cover1.jpg", "imgs/cover2.jpg", "imgs/cover3.jpg"];
+
+
+// Create An Object Of Audio
+
+let audio = new Audio();
+let currentSong = 0;
+
+// whenever the window load, song should play automaticly
+
+window.onload = pauseSong;
+
+// let's play the song by this function whenever window load
+
+function playSong() {
+  audio.src = audios[currentSong];
+  audio.play();
+  
+}
+
+// let's pause the song by this function whenever window load
+function pauseSong() {
+    audio.src = audios[currentSong];
+    audio.pause();
+    
+  }
+
+// switch between Play and Pause click 
+
+function togglePlayPause() {
+  if (audio.paused) {
+    audio.play();
+    let playBtn = document.querySelector(".play-pause");
+    playBtn.innerHTML = '<i class="fa fa-pause"></i>';
+    playBtn.style.paddingLeft = "30px";
+  } else {
+    audio.pause();
+    playBtn = document.querySelector(".play-pause");
+    playBtn.innerHTML = '<i class="fa fa-play"></i>';
+    playBtn.style.paddingLeft = "33px";
+  }
+}
+
+// Now let's Work on next and prev buttons
+
+function nextAudio() {
+  currentSong++;
+  if (currentSong > 2) {
+    currentSong = 0;
+  }
+  playSong();
+  playBtn = document.querySelector(".play-pause");
+  playBtn.innerHTML = '<i class="fa fa-pause"></i>';
+  playBtn.style.paddingLeft = "30px";
+  // just one line jquery for changing the covers
+
+  $(".img img").attr("src", covers[currentSong]);
+}
+
+function prevAudio() {
+  currentSong--;
+  if (currentSong < 0) {
+    currentSong = 2;
+  }
+  playSong();
+  playBtn = document.querySelector(".play-pause");
+  playBtn.innerHTML = '<i class="fa fa-pause"></i>';
+  playBtn.style.paddingLeft = "30px";
+  // just one line jquery for changing the covers
+
+  $(".img img").attr("src", covers[currentSong]);
+}
