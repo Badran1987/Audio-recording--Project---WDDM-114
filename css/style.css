@@ -10,7 +10,7 @@
         height: 100vh;
     }
     img {
-        max-width: 100%;
+        max-width: 100%;     
       }
     .container {
         width: 100%;
@@ -31,7 +31,10 @@
     a{
         cursor: pointer;
     }
+    .title a{
+        color: #fff;
 
+    }
     .player {
         background: #000;
         width: 450px;
