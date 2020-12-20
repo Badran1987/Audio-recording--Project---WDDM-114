@@ -27,18 +27,25 @@
         text-align: center;
         font-size: 2em;
         margin-top: 20px;
+        margin-bottom: 20px;
         }   
     p{
         text-align: center;
         font-size: 1em;
         color: #ffffff;
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         }
     a{
         cursor: pointer;
     }
+    .title {
+      text-align: center;
+      padding-top: 10px;
+    }
     .title a{
         color: #fff;
+        padding: 20px 0px 10px 0px;
 
     }
     .player {
@@ -149,7 +156,7 @@
   }
     .animal-player {
       background: #000;
-      width: 450px;
+      width: 650px;
       height: 730px;
       position: absolute;
       top: 50%;
@@ -157,12 +164,12 @@
       transform: translate(-50%, -50%);
       color: #fff;
       border-radius: 5px;
-      box-shadow: 1px 1px 30px rgb(112, 25, 129), -1px -1px 30px #111;
+      box-shadow: 1px 1px 30px rgb(42, 129, 25), -1px -1px 30px #111;
       overflow: hidden;
   }
   
   .animal-play-btns {
-    padding: 95px 40px 90px 20px;
+    padding: 0px 0px 0px 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
@@ -182,25 +189,25 @@
     }
     
   .animal-play-btns .animal-play-pause {
-      background: #3a0652;
+      background: #087c4c;
       padding: 30px 30px 30px 33px;
       border-radius: 50%;
       box-shadow: 1px 1px 50px #111;
     }
-  /* Image design*/
+  /* animal Image design*/
 .animal-img {
-  box-shadow: 1px 1px 15px #3a0652, -1px -1px 15px #3a0652;
-  width: 30%;
-  border-radius: 50%;
+  box-shadow: 1px 1px 15px #087c4c, -1px -1px 15px #087c4c;
+  width: 60%;
+  border-radius: 20%;
   margin: 30px auto;
   transition: all 0.3s;
 }
 .animal-img img {
-border-radius: 50%;
+border-radius: 20%;
 cursor: pointer;
 }
 
 .animal-img:hover {
-box-shadow: 1px 1px 25px #3a0652, -1px -1px 25px #3a0652;
+box-shadow: 1px 1px 25px #087c4c, -1px -1px 25px #087c4c;
 transform: scale(1.03);
 }  
