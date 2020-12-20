@@ -6,11 +6,17 @@
     
     body {
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        background: linear-gradient(120deg, #1db8a3, #6b258b, #2157a8);
         height: 100vh;
     }
+   
+    .nn{
+      background: linear-gradient(120deg, #1db8a3, #6b258b, #2157a8);
+      height: 100vh;
+
+    }
     img {
-        max-width: 100%;     
+        max-width: 100%;
+        
       }
     .container {
         width: 100%;
@@ -72,30 +78,7 @@
         box-shadow: 1px 1px 50px #111;
       }
       
-    .volume-btns {
-        margin: 30px 0;
-      }
-      
-    .volume-btns a {
-        color: #fff;
-        margin: 0 40px;
-        font-size: 1.3em;
-      }
-      
-    .volume-btns button {
-        width: 30px;
-        height: 30px;
-        border: none;
-        font-size: 1.3em;
-        font-weight: bold;
-        color: #3a0652;
-        border-radius: 50%;
-        cursor: pointer;
-        outline: none;
-        box-shadow: 1px 1px 25px #111;
-        transition: all 0.3s;
-      }
-      
+   
     .volume-btns button:hover {
         background: #3a0652;
         color: #fff;
@@ -135,6 +118,9 @@
       }
 
  /* Image design*/
+
+
+ 
     .img {
             box-shadow: 1px 1px 15px #3a0652, -1px -1px 15px #3a0652;
             width: 30%;
@@ -151,3 +137,70 @@
         box-shadow: 1px 1px 25px #3a0652, -1px -1px 25px #3a0652;
         transform: scale(1.03);
     }
+
+    /*Anaimal page style */
+
+    .animal-section{
+      background-image: url(../images/farm.jpg);    
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+  }
+    .animal-player {
+      background: #000;
+      width: 450px;
+      height: 730px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 1px 1px 30px rgb(112, 25, 129), -1px -1px 30px #111;
+      overflow: hidden;
+  }
+  
+  .animal-play-btns {
+    padding: 95px 40px 90px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    margin: 100px,auto;
+}
+    .animal-audio-btns a:hover {
+      color: #aaa;
+    }
+    
+
+    .animal-play-btns a {
+      color: #fff;
+      margin: 0 30px;
+      font-size: 1.5em;
+      transition: all 0.5;
+    }
+    
+  .animal-play-btns .animal-play-pause {
+      background: #3a0652;
+      padding: 30px 30px 30px 33px;
+      border-radius: 50%;
+      box-shadow: 1px 1px 50px #111;
+    }
+  /* Image design*/
+.animal-img {
+  box-shadow: 1px 1px 15px #3a0652, -1px -1px 15px #3a0652;
+  width: 30%;
+  border-radius: 50%;
+  margin: 30px auto;
+  transition: all 0.3s;
+}
+.animal-img img {
+border-radius: 50%;
+cursor: pointer;
+}
+
+.animal-img:hover {
+box-shadow: 1px 1px 25px #3a0652, -1px -1px 25px #3a0652;
+transform: scale(1.03);
+}  

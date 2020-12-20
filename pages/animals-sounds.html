@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    
+    <title>Badran Project</title>
+</head>
+<body>
+
+    <section class="animal-section">
+       
+        <div class="animal-player">
+         <div class="container">
+   <!-- ============== Title ==============  -->
+
+           <div class="title">
+                <h1>Badran Audio</h1>
+                <a href="../index.html">play and Record some Sound</a>
+        
+                <p>WDDM - 114</p>
+            </div>
+    <!-- ============== Recording Buttons ==============  -->
+       
+       
+    <!-- ============== Image  ==============  -->
+        <div class="animal-img">
+            <img src="images/Cover1-1.jpg" alt="" id="imgClickAndChange" onclick="changeImage()"/>
+        </div>      
+    <!-- ============== Audio Buttons ===== <a href="#" class="animal-play-pause" onclick="togglePlayPause()"
+                    ><i class="fa fa-play"></i
+                  ></a>
+                  <a href="#" onclick="nextAudio()"><i class="fa fa-forward"></i></a>=========  -->
+
+            <div class="animal-audio-btns">
+            
+
+               
+                <div id="badran" class="badran animal-play-btns">
+                  <a href="#" id="dog" onclick="animalsSound('dog')"><i class="fas fa-dog"></i></a>
+                  <a href="#" id="frog" onclick="animalsSound('frog')"><i class="fas fa-frog"></i></a>
+                  <a href="#" id="cat" onclick="animalsSound('cat')"><i class="fas fa-cat"></i></a>
+                  <a href="#" id="paw" onclick="animalsSound('pow')"><i class="fas fa-paw"></i></a>
+                  <a href="#" id="horse" onclick="animalsSound('hourse')"><i class="fas fa-horse-head"></i></a>
+                  <a href="#" id="dove" onclick="animalsSound('dove')"><i class="fas fa-dove"></i></a> 
+                </div>
+             
+              </div>
+             
+          </div>
+        </div>
+    </section>
+    <script src="../js/animals.js"></script>
+  
+</body>
+</html>
