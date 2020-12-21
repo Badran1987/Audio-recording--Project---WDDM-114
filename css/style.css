@@ -183,7 +183,7 @@
 
     .animal-play-btns a {
       color: #fff;
-      margin: 0 30px;
+      margin: 0 auto;
       font-size: 1.5em;
       transition: all 0.5;
     }
